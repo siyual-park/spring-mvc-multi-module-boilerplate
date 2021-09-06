@@ -1,4 +1,4 @@
-package io.github.siyual_park.configuration
+package io.github.siyual_park.app_interface.configuration
 
 import io.swagger.annotations.Api
 import io.swagger.annotations.ApiOperation

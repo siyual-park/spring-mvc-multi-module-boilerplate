@@ -1,4 +1,4 @@
-package io.github.siyual_park.controller
+package io.github.siyual_park.app_interface.controller
 
 import org.junit.jupiter.api.Test
 import org.springframework.test.web.servlet.MockMvc

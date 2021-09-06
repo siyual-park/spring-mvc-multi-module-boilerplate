@@ -1,4 +1,5 @@
 val springfox_version: String by project
+val exposed_version: String by project
 
 plugins {
     application
@@ -27,6 +28,11 @@ dependencies {
 
     implementation("io.springfox:springfox-boot-starter:$springfox_version")
     implementation("io.springfox:springfox-swagger-ui:$springfox_version")
+
+    implementation("org.jetbrains.exposed:exposed-core:$exposed_version")
+    implementation("org.jetbrains.exposed:exposed-dao:$exposed_version")
+    implementation("org.jetbrains.exposed:exposed-jdbc:$exposed_version")
+    implementation("org.jetbrains.exposed:exposed-spring-boot-starter:$exposed_version")
 }
 
 kotlin.sourceSets["main"].kotlin.srcDirs("src/main")

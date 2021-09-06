@@ -1,4 +1,5 @@
 val kotlin_version: String by project
+val junit_version: String by project
 
 buildscript {
     val klint_version: String by project
@@ -31,6 +32,9 @@ allprojects {
 
     dependencies {
         implementation(kotlin("stdlib"))
+
+        testImplementation("org.junit.jupiter:junit-jupiter-api:$junit_version")
+        testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junit_version")
     }
 }
 

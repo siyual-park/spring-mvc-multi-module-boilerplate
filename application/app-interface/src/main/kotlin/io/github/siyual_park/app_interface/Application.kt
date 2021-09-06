@@ -1,4 +1,4 @@
-package io.github.siyual_park
+package io.github.siyual_park.app_interface
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan
