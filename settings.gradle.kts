@@ -1,4 +1,4 @@
-rootProject.name = "ktor-boilerplate"
+rootProject.name = "spring-mvc-boilerplate"
 
 fun includeModules(pathname: String) {
     File(pathname).listFiles()?.forEach {
