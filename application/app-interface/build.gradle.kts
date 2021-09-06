@@ -11,12 +11,9 @@ plugins {
 }
 
 dependencies {
+    // Spring
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
-
-    implementation("org.springframework.boot:spring-boot-starter-security")
-
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
@@ -24,7 +21,9 @@ dependencies {
     runtimeOnly("com.h2database:h2")
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("org.springframework.security:spring-security-test")
+
+    // Other
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     implementation("io.springfox:springfox-boot-starter:$springfox_version")
     implementation("io.springfox:springfox-swagger-ui:$springfox_version")
