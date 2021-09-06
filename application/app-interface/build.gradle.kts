@@ -1,3 +1,5 @@
+val springfox_version: String by project
+
 plugins {
     application
 
@@ -23,6 +25,9 @@ dependencies {
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.security:spring-security-test")
+
+    implementation("io.springfox:springfox-boot-starter:$springfox_version")
+    implementation("io.springfox:springfox-swagger-ui:$springfox_version")
 }
 
 kotlin.sourceSets["main"].kotlin.srcDirs("src/main")
